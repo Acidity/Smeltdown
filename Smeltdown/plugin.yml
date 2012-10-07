@@ -1,0 +1,5 @@
+name: Smeltdown
+main: com.gmail.megagamer410.smeltdown.Smeltdown
+version: 1.0.0
+author: megagamer410
+description: Smelts armor and tools into the constituent material.
