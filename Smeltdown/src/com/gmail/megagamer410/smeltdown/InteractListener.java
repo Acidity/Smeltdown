@@ -38,16 +38,11 @@ public class InteractListener implements Listener
 								int remainingDurability = maxDurability - furnace.getInventory().getSmelting().getDurability();
 								int baseMaterial =  Plugin.getConfig().getInt(("Materials."+furnace.getInventory().getSmelting().getType().toString()));
 								int requiredFuel = (int)((double)remainingDurability / (double)maxDurability * (double)baseMaterial);
-								Plugin.log.info(String.valueOf(maxDurability));
-								Plugin.log.info(String.valueOf(remainingDurability));
-								Plugin.log.info(String.valueOf(baseMaterial));
-								Plugin.log.info(String.valueOf(requiredFuel));
 								if(requiredFuel <= 0) {
 									event.getPlayer().sendMessage("§f[§3Smeltdown§f]§b This tool is too damaged to smelt.");
 								} else if(furnace.getInventory().getResult() != null) {
 									event.getPlayer().sendMessage("§f[§3Smeltdown§f]§b You must remove all the resultant items from the furnace.");
 								} else if(furnace.getInventory().getFuel().getAmount() >= requiredFuel) {
-									Plugin.log.info("Required fuel: " + requiredFuel);
 									ItemStack newFuel = furnace.getInventory().getFuel();
 									newFuel.setAmount(furnace.getInventory().getFuel().getAmount()-requiredFuel);
 									furnace.getInventory().setFuel(newFuel);
