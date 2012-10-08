@@ -64,7 +64,7 @@ public class InteractListener implements Listener {
 
 		// Check for products in furnace
 		if (fi.getResult() != null) {
-			event.getPlayer().sendMessage("[" + ChatColor.DARK_AQUA + "Smeltdown" + ChatColor.WHITE + "]" + ChatColor.AQUA + "You must remove all the products from the furnace.");
+			event.getPlayer().sendMessage("[" + ChatColor.DARK_AQUA + "Smeltdown" + ChatColor.WHITE + "]" + ChatColor.AQUA + " You must remove all the products from the furnace.");
 			return;
 		}
 
