@@ -18,7 +18,7 @@
     along with Smeltdown.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package com.gmail.megagamer410.smeltdown;
+package com.gmail.acidity410.smeltdown;
 
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
