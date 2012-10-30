@@ -1,6 +1,6 @@
 /*
-    Copyright (C) 2012  megagamer410
-    Email: megagamer410@gmail.com
+    Copyright (C) 2012  Tyler O'Meara
+    Email: OMeara.Tyler@gmail.com
 
     This file is part of Smeltdown.
 
